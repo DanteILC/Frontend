@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido en linea</title>
+</head>
+<body>
+    <!-- encabezado-->
+    <header>
+        <img src="Image/caperucita_roja.jpg" alt="Caperucita pasteleria" width="100px">
+        <h1>Pasteleria la caperusa pastelera</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="sabores_adornos.html">Sabores y adornos</a></li>
+                    <li><a href="pedido.html">Pedido en linea</a></li>
+                </ul>
+            </nav>
+    </header>
+    <hr>
+    <!-- Formulario -->
+    <form>
+        <h1>Pedidos en linea</h1>
+        <h2>¿Comó quieres tu pastel?</h2>
+        <p><b>Llena el formulario para realizar el pedido de tu pastel personalizado</b></p>
+        <!--Nombre completo-->
+        <label for="name1">Nombre completo</label><br>
+        <input type="text" id="name1" name="name1"><br>
+        <!--Telefono-->
+        <label for="tel1">Celular</label><br>
+        <input type="tel" name="tel1" id="tel1" maxlength="10"><br>
+        <!--Direccion-->
+        <label for="dir1">Direccion</label><br>
+        <input type="text" name="dir1" id="dir1"><br>
+        <!--Numero de personas-->
+        <label for="num_per">Numero de personas</label><br>
+        <input list="num_per">
+        <datalist id="num_per">
+            <option value="10">
+            <option value="20">
+            <option value="30">
+            <option value="40">
+            <option value="50">
+            <option value="100">
+            <option value="200">
+        </datalist><br>
+        <!--Sabores-->
+        <label for="sabores">¿Qué sabor te gustaría?</label><br>
+        <select name="sabores" id="sabores">
+            <option value=""></option>
+            <option value="cafe">Cafe</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="coco">Coco</option>
+            <option value="frambuesa">Frambuesa</option>
+            <option value="fresa">Fresa</option>
+            <option value="limon">Limon</option>
+            <option value="tres leches">Tres leches</option>
+            <option value="vainilla">Vainilla</option>
+            <option value="chocorrol">Chocorrol</option>
+            <option value="gansito">Gansito</option>
+        </select><br>
+        <!--Adornos-->
+        <label for="decoracion">¿Qué decoracion le quieres poner a tu pastel?</label><br>
+        <select name="decoracion" id="decoracion">
+            <option value=""></option>
+            <option value="cumpleaños">Cumpleaños</option>
+            <option value="gato">Gatuno</option>
+            <option value="infantil">Infantil</option>
+            <option value="pirata">Pirata</option>
+        </select><br>
+        <!--Imagen-->
+        <label for="image">En caso de no querer algun diseño de los anteriores y querer poner una imagen o dibujo favor de ponerlo en el formulario</label><br>
+        <input accept="image/*" type="file" id="archivo1" name="archivo1" multiple><br><br>
+        <!--Botones para enviar el formulario-->
+        <input type="reset">
+        <input type="submit" onclick="alert('El pedido ha sido realizado')"><br>
+    </form>
+    <!--Pie de pagina-->
+    <footer>
+        <h3>Direccion</h3>
+        <p>Sucursal Matriz: 55 Poniente No. 905 Prados de Agua Azul. Puebla, Pue. Tels. (222) 243.82.49 y 237.63.22</p>
+        <h3>Redes sociales</h3>
+        <a href="https://www.facebook.com/"target="_blank"><img src="image/iconos/facebook.png" width="50px"></a>
+        <a href="https://twitter.com/"target="_blank"><img src="image/iconos/Twitter.png" width="50px"></a>
+        <a href="https://www.instagram.com/"target="_blank"><img src="image/iconos/instagram.jpg" width="50px"></a>
+        <h3>Horarios</h3>
+        <table>
+            <tr>
+                <td><b>Lunes</b></td>
+                <td>10:00 am - 8:00 pm</td>
+            </tr>
+            <tr>
+                <td><b>Martes</b></td>
+                <td>10:00 am - 8:00 pm</td>
+            </tr>
+            <tr>
+                <td><b>Miercoles</b></td>
+                <td>10:00 am - 8:00 pm</td>
+            </tr>
+            <tr>
+                <td><b>Jueves</b></td>
+                <td>10:00 am - 8:00 pm</td>
+            </tr>
+            <tr>
+                <td><b>Viernes</b></td>
+                <td>10:00 am - 8:00 pm</td>
+            </tr>
+            <tr>
+                <td><b>Sabado</b></td>
+                <td>9:00 am - 8:00 pm</td>
+            </tr>
+            <tr>
+                <td><b>Domingo</b></td>
+                <td>9:00 am - 8:00 pm</td>
+            </tr>
+        </table>
+    </footer>
+    <!--Fin de pie de pagina-->
+</body>
+</html>
